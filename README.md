@@ -153,10 +153,11 @@ Detailed explanations of some config options:
 - CDN server's address:
 
     - The server for clients to download assets.
-    - Default to  https://llsifas.catfolk.party/static/ (special thanks to sarah for hosting it).
+    - Default to  https://llsifas.imsofucking.gay/static/ (special thanks to sarah for hosting it).
     - `elichika` also has the ability to host the CDN itself:
 
-        - To do this, put the relevant files in `elichika/static`.
+        - To do this, put the relevant files in `elichika/static`:
+          - For each package, the server expect it in `elichika/static/<package_name>`
         - Then set the CDN server address to the STRING (no protocol) `elichika` (or `elichika_tls` if you're using HTTPS).
         - This will automatically use whatever the address the client reach `elichika` with as the CDN server.
         - Aside from that, you can also just use the address like normal.
@@ -206,7 +207,8 @@ Special thanks to the LL Hax community in general for:
 Even more special thanks for the specific individuals or groups (in no particular order):
 
 - YumeMichi for original elichika.
-- triangle for informations and scripts to encode/decode database, for patching the ios clients, and for daily theater logs.
+- triangle for informations and scripts to encode/decode database, for patching the ios clients, for daily theater logs, for databases across all versions, and for some various missing asset files.
+- gam for various missing asset files.
 - [SIFAStheatre](https://twitter.com/SIFAStheatre) and [Idol Story](https://twitter.com/idoldotst) for Daily theater English tranlation and for the original Japanese transcript.
 - ethan for hosting various resource and hosting a public testing server.
 - rayfirefirst, cppo for various cryptographic keys.
@@ -215,3 +217,10 @@ Even more special thanks for the specific individuals or groups (in no particula
 - sarah for hosting public Internet CDN.
 - Caret for the LL Hax discord.
 - And other people who more than deserve to be here but I can't quite recall right now.
+
+## Disclaimer
+This repository is designed for official contents of SIFAS only.
+
+The authors do not endorse any modification, except for the modifications included in this repoistory. 
+
+ALL other modifications to the assets, servers, or clients are outside of the authors' control. If such modifications cause issues, this repository is not the root cause.
