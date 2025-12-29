@@ -46,7 +46,7 @@ RUN apt update && apt install git -y
 
 WORKDIR /root/elichika/
 
-RUN git clone https://github.com/arina999999997/harasho assets --depth 1
+RUN git clone https://github.com/Nicklas373/harasho -b old assets --depth 1
 
 #COPY --from=builder /elichika/assets/ /root/elichika/assets/
 
